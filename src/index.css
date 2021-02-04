@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Sans', 'Ubuntu', 'Monaco',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: beige;
+  background-color:chocolate;
+  
+}
+
+code {
+  font-family: source-code-pro, Monaco, Monaco, Monaco, 'Courier New',
+    monospace;
+}
