@@ -4,7 +4,8 @@ import Form from './components/Form';
 function Contact(){
     const kontakt={
         adresa: "Pere Perovića 5",
-        telefon: "065/555-4574"
+        telefon: "065/555-4574",
+        email:"simishop@yahoo.com",
     }
     return(
         <div>
@@ -12,11 +13,18 @@ function Contact(){
             <br></br>
             <Form/>
             <br></br>
-            <br></br>
+
             <br></br>
             <br></br>
 
-            <h3>Za sva dodatna pitanja, budite slobodni i kontaktirajte Simi's shop putem telefona: {kontakt.telefon} ili nas posetite na adresi: {kontakt.adresa}</h3>
+            <h3>Za sva dodatna pitanja, budi slobodan/na i kontaktiraj Simi's shop:</h3>
+            <br></br>
+
+            <ul> 
+                <li>Putem telefona: {kontakt.telefon}</li> 
+                <li>Posetom na adresi: {kontakt.adresa}</li>
+                <li>Putem e-mail adrese: {kontakt.email}</li>
+            </ul>
             <br></br>
     
             

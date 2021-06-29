@@ -12,13 +12,13 @@ class Navbar extends Component {
     }
 
     love() {
-        alert("Hvala što nas podržavate!");
+        alert("Hvala što podržavaš Simi's shop!");
       }
 
     render() {
         return (
             <nav className="NavbarItems">
-                <h1 className="navbar-logo">GOD<i className="fab fa-react"></i></h1>
+                <h1 className="navbar-logo">Simi's shop<i className="fab fa-react"></i></h1>
                 <div className="menu-icon" onClick={this.handleClick}>
                     <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
                 </div>
@@ -31,7 +31,7 @@ class Navbar extends Component {
                         )
                     })}
                 </ul>
-                <Button onClick={this.love}>Podrška našeg rada :)</Button>
+                <Button onClick={this.love}>Klikni da podržiš rad :)</Button>
             </nav>
         )
     }
