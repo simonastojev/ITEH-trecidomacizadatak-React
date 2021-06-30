@@ -1,5 +1,7 @@
 import React from 'react';
 import Form from './components/Form';
+import './Contact.css';
+
 
 function Contact(){
     const kontakt={
@@ -8,7 +10,7 @@ function Contact(){
         email:"simishop@yahoo.com",
     }
     return(
-        <div>
+        <div className="con">
             <br></br>
             <br></br>
             <Form/>
@@ -20,14 +22,18 @@ function Contact(){
             <h3>Za sva dodatna pitanja, budi slobodan/na i kontaktiraj Simi's shop:</h3>
             <br></br>
 
-            <ul> 
-                <li>Putem telefona: {kontakt.telefon}</li> 
-                <li>Posetom na adresi: {kontakt.adresa}</li>
-                <li>Putem e-mail adrese: {kontakt.email}</li>
-            </ul>
+            <div className="conList">
+
+            <p> – Putem telefona: <a href="https://www.whatsapp.com">{kontakt.telefon}</a></p>
             <br></br>
-    
-            
+            <p> – Posetom na adresi: <a href="https://www.googlemaps.com">{kontakt.adresa}</a></p>
+            <br></br>
+            <p> – Putem e-mail adrese: <a href="https://mail.google.com/mail/u/0/#compose">{kontakt.email}</a></p>
+            <br></br>
+            </div>
+            <br></br>
+
+
         </div>
     )
 }
